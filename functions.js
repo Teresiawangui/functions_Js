@@ -21,11 +21,11 @@ function numbers() {
 //write a function that returns a new array of employee objects sorted by their salary in ascending order.
 let details = [
     { id: 78 },
-    { name: "Kathure Bridget" },
+    { name: "Nancy Kimondo" },
     { salary: [500, 20000, 800, 10000] },
   ];
-    details.sort(function(K, T) {
-    return K.salary - (T.salary);
+    details.sort(function(X, Y) {
+    return X.salary - (Y.salary);
   });
   details.forEach((person) => console.log(details.salary));
  console.log(details);
