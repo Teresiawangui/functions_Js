@@ -5,6 +5,8 @@ function sortArray(){
     console.log(array1.reverse());
 }
 sortArray()
+
+
 //Using JS functions and an array of numbers, return positive if an element within the array is positive, negative if an element is negative, else zero
 function numbers() {
     let theArr =theArr.forEach(element => {
