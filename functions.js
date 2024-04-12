@@ -1,13 +1,17 @@
-//Given an array of strings, use a function to reverse all the elements in the string in ascending order and the specific elements in descending order
-function sortArray(){
-    let array1 = ["red", "blue", "yellow", "black"];
-    console.log(array1.sort());
-    console.log(array1.reverse());
+//Given an array of strings, use a function to reverse all the elements in the string in ascending
+//order and the specific elements in descending order
+function reverseAscending(arr) {
+  return arr.sort().map(str => str.split('').reverse().join(''));
 }
-sortArray()
+
+// Example
+const stringsArray = ['hello', 'world', 'apple'];
+const reversedArray = reverseAscending(stringsArray);
+console.log(reversedArray); 
 
 
-//Using JS functions and an array of numbers, return positive if an element within the array is positive, negative if an element is negative, else zero
+//Using JS functions and an array of numbers, return positive if an element within the array is positive, 
+//negative if an element is negative, else zero
 function numbers() {
     let theArr =theArr.forEach(element => {
        if (element > 0) {
@@ -18,6 +22,7 @@ function numbers() {
          console.log("zero");
        }
     });
+    numbers(3,4,5,6,)
    }
 //Given an array of objects, where each object represents an employee with an id, name, and salary property,
 //write a function that returns a new array of employee objects sorted by their salary in ascending order.
@@ -38,14 +43,18 @@ function multiplication(numbers) {
     });
    }
    multiplication([7, 5, 1, 8]);
-//Write a function that takes in an array of numbers and consoles the first four items multiplied by 8 andthe last two added by 5. Console the array with the new values
+//Write a function that takes in an array of numbers and consoles the first four items
+ //multiplied by 8 andthe last two added by 5. Console the array with the new values
     function valuesArray(arr) {
     let theFour = arr.slice(0, 4).map(item => item * 8);
     let theTwo = arr.slice(-2).map(item => item + 5);
     const newArray = theFour.concat(theTwo);
     console.log(newArray);
    }
-   valuesArray([6, 2, 78, 5, 10, 8]);
+   valuesArray([6, 2, 78, 5,2,4,5, 10, 8]);
+
+  
+
 
 
 
