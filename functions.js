@@ -53,6 +53,37 @@ function multiplication(numbers) {
    }
    valuesArray([6, 2, 78, 5,2,4,5, 10, 8]);
 
+   //revision2
+   function merging(arr1,arr2){
+    result=[...arr1,...arr2]
+    return result.sort((arr1,arr2) => arr1-arr2);
+   }
+   let arr1 = [1,2,3,4]
+   let arr2 = [5,6,7,8]
+   console.log(merging(arr1,arr2))
+   
+
+   function myString(String){
+    string1 = String.split("").reverse().join("")
+    return string1
+   }
+   console.log(myString("Yvonne"))
+
+   
+   function removeDuplicates(x){
+    var a = x.split(" ");
+    var b =[];
+    for (var i in a )
+    if (b.indexOf(a[i])==-1) b.push(a[i])
+    return b.join(' ')
+   }
+    let x = ("my man my man my man")
+    console.log(removeDuplicates(x))
+   
+
+
+
+
   
 
 
